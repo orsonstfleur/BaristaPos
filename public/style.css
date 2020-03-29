@@ -1,0 +1,54 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  padding-top:80px;
+  word-wrap:break-word;
+}
+img{
+  height: 200px;
+}
+button{
+  padding: 35px;
+  width: 100%;
+  height: 135px;
+}
+.order{
+  width: 100%;
+  color: black;
+}
+table{
+  height: 300px;
+  width: 70%;
+}
+input{
+  margin: 15px 15px;
+  color: whitesmoke;
+  background-color: black;
+}
+.size{
+  width: 100%;
+  background-color: #00820d;
+}
+.drink{
+  background-color: #f7f705;
+}
+#enter{
+  width: 100%;
+  height: 135px;
+  margin: auto;
+  background-color: orange;
+}
+#hot{
+  background-color: #ff3729;
+}
+#cold{
+  background-color: #40a9ff;
+}
+.login{
+  padding: 1%;
+}
+.container .jumbotron {
+    border-radius: 125px;
+    background-color: darkorange;
+}

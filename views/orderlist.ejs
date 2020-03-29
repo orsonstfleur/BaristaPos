@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+<!-- links to all the files main css, bootstrap etc -->
+<head>
+  <title>Braista Page</title>
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+  <link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+  <div class="container">
+
+    <div class="page-header text-center"> <% /* Page title */ %>
+      <h1><span class="fa fa-anchor"></span> Order List</h1>
+      <a href="/logout" class="btn btn-default btn-sm">Logout</a>
+      <!-- logout link -->
+    </div>
+
+    <div class="row">
+      <div class="list">
+
+        <div class="current">
+          <h1>Current Order</h1>
+        <ul class="orders">
+          <% for(var i=0; i< orders.length; i++) {%>
+            <% if (!orders[i].completion) {%>
+          <li class="orders">
+            <span class="name"><%= orders[i].name%></span>
+            <span class="size"><%= orders[i].size %></span>
+            <span><%= orders[i].drink%></span>
+            <span><%= orders[i].completion%></span>
+            <span><%= orders[i].isIced%></span>
+            <button class="completeButton">Complete</button>
+          </li>
+           <% } %>
+          <% } %>
+        </ul>
+        </div>
+
+        <div class="completedOrders">
+        <h1>Completed Order</h1>
+        <ul class="orders">
+          <% for(var i=0; i< orders.length; i++) {%>
+            <% if (orders[i].completion) {%>
+          <li class="orders">
+            <span class="name"><%= orders[i].name%></span>
+            <span><%= orders[i].size %></span>
+            <span><%= orders[i].drink%></span>
+            <span><%= orders[i].completion%></span>
+            <span><%= orders[i].isIced%></span>
+          </li>
+           <% } %>
+          <% } %>
+        </ul>
+      </div>
+      </div>
+    <script src="https://kit.fontawesome.com/077191d827.js" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+
+</body>
+
+</html>

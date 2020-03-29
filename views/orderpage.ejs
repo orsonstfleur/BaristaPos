@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>Starbucks pos system</title>
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+
+    <div class="jumbotron text-center">
+      <h1>Orders</h1>
+
+      <div class="order">
+        <form class="button" action="/vieworders" method="post">
+          <table>
+
+            <tr>
+              <th><h2>Sizes</h2></th>
+              <div class="size">
+              <th><button class="size" type="button" name="small" value="small">Small</button></th>
+              <th><button class="size" type="button" name="medium" value="medium">Medium</button></th>
+              <th><button class="size" type="button" name="large" value="large">Large</button></th>
+              <th><button class="size" type="button" name="extra-large" value="extra-large">Extra-Large</button></th>
+              </div>
+              <th><button class="drink" type="button" name="tea" value="tea">Kopi Kuwak</button></th>
+            </tr>
+
+            <tr>
+              <th><h2>Drinks</h2></th>
+              <div class="drinks">
+              <th><button class="drink" type="button" name="latte" value="latte">Latte</button></th>
+              <th><button class="drink" type="button" name="tea" value="tea">Black Tea</button></th>
+              <th><button class="drink" type="button" name="tea" value="tea">Green Tea</button></th>
+              <th><button class="drink" type="button" name="chai" value="Chai">Chai</button></th>
+              <th><button class="drink" type="button" name="coffee" value="coffee">Coffee</button></th>
+            </div>
+            </tr>
+            <tr>
+              <th><H2>Enter Order</H2></th>
+              <th><button id="hot" type="button" value="hot">Hot</button></th>
+              <th><button id="cold" type="button" value="cold">Cold</button></th>
+              <th><button id="enter" type="button" value="">Submit order</button></th>
+              <th><button class="drink" type="button" name="Frappccino" value="Frappccino">Frappuccino</button></th>
+              <th><button id="clear" type="button" value="">Clear order</button></th>
+              <h2>Customer Name</h2>
+              <input id="name" type="text"placeholder="Customer name">
+            </tr>
+          </table>
+        </form>
+
+      </div>
+      <div class="login">
+        <p>Login or Signup:</p>
+      </div>
+
+      <a href="/login" class="btn btn-default"><span class="fa fa-user"></span>Login</a>
+      <a href="/signup" class="btn btn-default"><span class="fa fa-user"></span>Signup</a>
+
+    </div>
+
+  </div>
+  <script src="main.js"></script>
+  <script src="orderpage.js">
+
+  </script>
+</body>
+
+</html>

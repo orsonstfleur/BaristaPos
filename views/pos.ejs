@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>Starbucks pos system</title>
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+
+    <div class="jumbotron text-center">
+      <h1>Orders</h1>
+
+      <div class="order">
+        <form class="" action="/order" method="post">
+        <div class="">
+          <input type="text" name="customerName" value="" placeholder="Customer Name">
+        </div>
+        <div>
+          <input type="radio" name="drink" value="Kopi Luwak"> Kopi Kuwak</input>
+          <input type="radio" name="drink" value="Cold Brew">Cold Brew</input>
+          <input type="radio" name="drink" value="Espresso">Espresso</input>
+          <input type="radio" name="drink" value="Latte">Latte</input>
+          <input type="radio" name="drink" value="Chai"> Chai</input>
+          <input type="radio"  name="drink" value="Hot Chocolate">Hot Cholocate</input>
+        </div>
+
+        <div>
+          <input type="radio" name="size" value="Small">Small</input>
+          <input type="radio" name="size" value="Medium">Medium</input>
+          <input type="radio" name="size" value="Large">Large</input><br>
+        </div>
+
+        <div>
+          <input type="radio" name="temperature" value="Hot">Hot</input>
+          <input type="radio" name="temperature" value="Iced">Iced</input><br>
+        </div>
+        <button type="submit" name="button">Submit Order</button>
+      </form>
+
+      </div>
+      <div class="login">
+        <p>Login or Signup:</p>
+      </div>
+
+      <a href="/login" class="btn btn-default"><span class="fa fa-user"></span>Login</a>
+      <a href="/signup" class="btn btn-default"><span class="fa fa-user"></span>Signup</a>
+
+    </div>
+
+  </div>
+  <script src="main.js"></script>
+</body>
+
+</html>
